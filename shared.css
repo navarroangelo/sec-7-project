@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+#page-logo a {
+  font-family: "Oleo Script", sans-serif;
+  padding: 10px;
+  color: rgb(245, 243, 160);
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0);
+  /* text-shadow: hoff voff blur #000; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  /* flexbox documentation: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox */
+  flex-wrap: wrap;
+  /* flex-wrap: sets the wrapping behavior of the flex items, nowrap by default */
+  flex-direction: row;
+  /* flex-direction: sets the main axis (row/reverse or column/reverse) */
+  /* row, row-reverse, column, column-reverse */
+  flex-flow: row wrap;
+  /* flex-flow: shorthand for flex-direction and flex-wrap */
+  justify-content: space-between;
+  /* justify-content: sets the alignment along the main axis (horizontal axis in this case) */
+  /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+  align-items: center;
+  /* align-items: sets the alignment along the cross axis (vertical axis in this case) */
+  /* flex-start, flex-end, center, baseline, stretch */
+  padding: 15px 40px;
+}
+
+header ul {
+  display: flex;
+  margin-right: 15px;
+  justify-content: flex-end;
+}
+
+header li {
+  margin-left: 20px;
+}
